@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+
+
+    >
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="210dp"
+        android:layout_height="79dp"
+        android:background="@drawable/login_button_design"
+        android:contentDescription="@string/login_button"
+        android:text="@string/login_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        tools:text="@string/login_button" />
+
+    <Button
+        android:id="@+id/AuthorButton"
+        android:layout_width="258dp"
+        android:layout_height="79dp"
+        android:background="@drawable/authorbtn_design"
+        android:contentDescription="@string/AuthorButton"
+        android:text="@string/AuthorButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="254dp"
+        android:layout_height="260dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/PersonButton"
+        android:layout_width="258dp"
+        android:layout_height="79dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/PersonButton"
+        android:text="@string/person_registration"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

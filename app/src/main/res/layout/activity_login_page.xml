@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiand_background"
+    tools:context=".Login_page_activity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/name_icon"
+        tools:ignore="VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/EmailInputLogin"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/PasswordInput"
+        android:layout_width="353dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="284dp"
+        android:ems="10"
+
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="191dp"
+        android:layout_height="65dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/login_button"
+        android:text="@string/login_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749"
+        tools:text="@string/login_button" />
+
+    <TextView
+        android:id="@+id/RegisterIntent"
+        android:layout_width="293dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/don_t_have_an_account_n_click_here_to_register"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

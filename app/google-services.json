@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515250788730",
+    "project_id": "sahajjo-project",
+    "storage_bucket": "sahajjo-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515250788730:android:173b09fcc8788e4e499ec3",
+        "android_client_info": {
+          "package_name": "com.sahajjoapp.sahajjo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVY2WzZQ7_Ns_cxJ8G7pWsLFSPZUVaQRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

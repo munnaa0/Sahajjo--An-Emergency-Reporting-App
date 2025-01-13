@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Sahajjo</string>
+    <string name="background_image">background_image</string>
+    <string name="logo">logo image</string>
+    <string name="PersonButton">Person Button</string>
+    <string name="person_registration">Person Registration</string>
+    <string name="AuthorButton">Authority Registration</string>
+    <string name="JustAText">Still Haven\'t Designed this page</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_text"> Hi,\nPlease Sign UP</string>
+    <string name="sign_top_image">Hey There!!!\nSign UP</string>
+    <string name="username_textfield">Username Imput</string>
+    <string name="username_hint">Full Name</string>
+    <string name="email_edittext">Email</string>
+    <string name="email_input_hint">Email</string>
+    <string name="enter_your_password">Choose A Password</string>
+    <string name="enter_your_password_again">Enter Your Password Again</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="location">Location</string>
+    <string name="submit">Submit</string>
+    <string name="gender">Gender</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="hi_nplease_login">Hi\nPlease Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="email">Email</string>
+    <string name="don_t_have_an_account_n_click_here_to_register">Don\'t Have an Account ?\n Click here to Register!!</string>
+    <string name="welcome_to_the_person_main_interface">Welcome to the Person Main Interface</string>
+    <string name="logout">Logout</string>
+    <string name="authority_nregistration">Authority\nRegistration</string>
+    <string name="office_location">Office Location</string>
+    <string name="enter_nid_number">Enter NID Number</string>
+    <string name="enter_id_number_of_your_office_id">Enter ID number of your Office ID</string>
+    <string name="title_activity_erson_main_interface">erson_Main_Interface_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="emegrency_help">EMERGENCY HELP !!!</string>
+    <string name="specific_button">SPECIFIC PROBLEM REPORT</string>
+    <string name="userProfile"> </string>
+
+</resources>
