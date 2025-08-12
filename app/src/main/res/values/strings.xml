@@ -51,5 +51,7 @@
     <string name="emegrency_help">EMERGENCY HELP !!!</string>
     <string name="specific_button">SPECIFIC PROBLEM REPORT</string>
     <string name="userProfile"> </string>
+    <string name="reported_problems">REPORTED PROBLEMS</string>
+    <string name="emergency_situation">EMERGENCY SITUATION</string>
 
 </resources>
