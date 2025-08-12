@@ -110,10 +110,13 @@ app/
 
 ## 📱 Screenshots
 
-_Add your app screenshots here to showcase the UI_
-
-## 🛠️ Installation & Setup
-
+<div align="center">
+  <img src="screenshots/screenshot1.png" alt="Login Screen" width="300"/>
+  <img src="screenshots/screenshot2.png" alt="Registration Screen" width="300"/>
+  <img src="screenshots/screenshot3.png" alt="Citizen Dashboard" width="300"/>
+  <img src="screenshots/screenshot4.png" alt="Admin Dashboard" width="300"/>
+  <img src="screenshots/screenshot5.png" alt="Problem Reporting" width="300"/>
+  <img src="screenshots/screenshot6.png" alt="Problem Management" width
 ### Prerequisites
 
 - Android Studio Arctic Fox or later
@@ -218,23 +221,16 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### Development Guidelines
-
-- Follow Java coding conventions
-- Write meaningful commit messages
-- Test your changes thoroughly
-- Update documentation as needed
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
-**Munna Ahmed**
+**Md Sultan Mahmud Munna**
 
 - GitHub: [@munnaa0](https://github.com/munnaa0)
-- Email: [Your Email]
+- Email: [munna.syc@gmail.com](mailto:munna.syc@gmail.com)
 
 ## 🙏 Acknowledgments
 
@@ -266,5 +262,4 @@ If you encounter any issues or have questions:
 
 <div align="center">
   <p><strong>Made with ❤️ for community safety</strong></p>
-  <p>Star ⭐ this repo if you find it helpful!</p>
 </div>
