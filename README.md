@@ -116,7 +116,11 @@ app/
   <img src="screenshots/screenshot3.png" alt="Citizen Dashboard" width="300"/>
   <img src="screenshots/screenshot4.png" alt="Admin Dashboard" width="300"/>
   <img src="screenshots/screenshot5.png" alt="Problem Reporting" width="300"/>
-  <img src="screenshots/screenshot6.png" alt="Problem Management" width
+  <img src="screenshots/screenshot6.png" alt="Problem Management" width="300"/>
+</div>
+
+## 🛠️ Installation & Setup
+
 ### Prerequisites
 
 - Android Studio Arctic Fox or later
