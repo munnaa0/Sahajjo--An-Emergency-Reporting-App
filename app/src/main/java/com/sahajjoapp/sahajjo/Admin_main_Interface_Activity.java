@@ -5,23 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Source;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 public class Admin_main_Interface_Activity extends AppCompatActivity {
@@ -30,9 +25,7 @@ public class Admin_main_Interface_Activity extends AppCompatActivity {
     FirebaseFirestore firestore;
     DrawerLayout drawerLayout;
     TextView userName, userEmail, userMobile, userLocation, userNid, userOfficeId;
-    RecyclerView recyclerViewProblems;
-    problemAdapter problemAdapter;
-    ArrayList<Problem> problemArrayList;
+    Button reportedProblemsButton, emergencySituationButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -54,17 +47,27 @@ public class Admin_main_Interface_Activity extends AppCompatActivity {
         userNid = headerView.findViewById(R.id.userNid);
         userOfficeId = headerView.findViewById(R.id.userOfficeId);
 
+        reportedProblemsButton = findViewById(R.id.reportedProblemsButton);
+        emergencySituationButton = findViewById(R.id.emergencySituationButton);
+
         // Fetch user data from FireStore and set it in the drawer
         fetchUserData();
 
-        recyclerViewProblems = findViewById(R.id.recyclerViewProblems);
-        recyclerViewProblems.setLayoutManager(new LinearLayoutManager(this));
-        problemArrayList = new ArrayList<>();
-        problemAdapter = new problemAdapter(this, problemArrayList);
-        recyclerViewProblems.setAdapter(problemAdapter);
+        reportedProblemsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_main_Interface_Activity.this, Admin_Reported_Problems_Activity.class);
+                startActivity(intent);
+            }
+        });
 
-        // Fetch problems with real-time updates
-        fetchProblems();
+        emergencySituationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: Implement emergency situation functionality
+                // For now, this button doesn't do anything as requested
+            }
+        });
     }
 
     private void fetchUserData() {
@@ -85,26 +88,6 @@ public class Admin_main_Interface_Activity extends AppCompatActivity {
                         }
                     });
         }
-    }
-
-    private void fetchProblems() {
-        firestore.collection("problems")
-                .addSnapshotListener((queryDocumentSnapshots, e) -> {
-                    if (e != null) {
-                        Toast.makeText(Admin_main_Interface_Activity.this, "Error fetching problems: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-                    if (queryDocumentSnapshots != null) {
-                        problemArrayList.clear(); // Clear existing data to avoid duplicates
-                        for (DocumentSnapshot document : queryDocumentSnapshots) {
-                            Problem problem = document.toObject(Problem.class);
-                            if (problem != null) {
-                                problemArrayList.add(problem);
-                            }
-                        }
-                        problemAdapter.notifyDataSetChanged(); // Notify the adapter of the data change
-                    }
-                });
     }
 
     public void openDrawer(View view) {

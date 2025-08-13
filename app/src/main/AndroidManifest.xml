@@ -32,6 +32,9 @@
         <activity
             android:name=".Admin_main_Interface_Activity"
             android:exported="false" />
+        <activity
+            android:name=".Admin_Reported_Problems_Activity"
+            android:exported="false" />
 
         <activity
             android:name=".Login_page_activity"
